@@ -23,22 +23,18 @@
             width: 100vw;
             overflow-y: auto;
             scroll-snap-type: y mandatory;
-            padding: 0px 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         .gallery-container img {
-            width: calc(100% - 40px); /* Adjust width to accommodate padding */
-            height: auto;
-            margin-bottom: 20px;
-            object-fit: contain;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
             scroll-snap-align: start;
             border: 5px solid #fff;
             border-radius: 10px;
-        }
-
-        .gallery-container img:last-child {
-            margin-bottom: 100px; /* Add margin at the bottom of the last image */
+            display: block;
         }
     </style>
 </head>
