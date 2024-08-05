@@ -29,15 +29,15 @@
 
         .gallery-container img {
             width: 100vw;
-            height: 90vh; /* Adjust height to fit comfortably within the viewport */
-            object-fit: cover;
+            height: auto; /* Adjust height to maintain aspect ratio */
+            max-height: 90vh; /* Limit height to fit comfortably within the viewport */
+            object-fit: contain;
             scroll-snap-align: start;
             border: 5px solid #fff;
             border-radius: 10px;
             display: block;
-            margin-bottom: 10px; /* Add margin between images */
+            margin-bottom: 20px; /* Add margin between images */
         }
-
         .gallery-container img:last-child {
             margin-bottom: 100px; /* Add extra margin at the bottom of the last image */
         }
