@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Catalog</title>
+    <title>Vertical Image Scroll</title>
     <style>
         body, html {
             margin: 0;
@@ -29,16 +29,17 @@
 
         .gallery-container img {
             width: 100vw;
-            height: 100vh;
+            height: 90vh; /* Adjust height to fit comfortably within the viewport */
             object-fit: cover;
             scroll-snap-align: start;
             border: 5px solid #fff;
             border-radius: 10px;
             display: block;
+            margin-bottom: 10px; /* Add margin between images */
         }
 
         .gallery-container img:last-child {
-            margin-bottom: 100px; /* Add margin at the bottom of the last image */
+            margin-bottom: 100px; /* Add extra margin at the bottom of the last image */
         }
     </style>
 </head>
